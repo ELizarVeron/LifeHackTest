@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LifeHackTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="place">Расположение</string>
+    <string name="www">www</string>
+    <string name="lat">Ширина</string>
+    <string name="lon">Долгота</string>
+    <string name="www_">www</string>
+    <string name="url">Сайт</string>
+    <string name="tel">Телефон</string>
+</resources>

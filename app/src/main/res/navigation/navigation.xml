@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/allCompaniesFragment">
+
+    <fragment
+        android:id="@+id/allCompaniesFragment"
+        android:name="com.android.lifehacktest.ui.AllCompaniesFragment"
+        android:label="AllCompaniesFragment" >
+        <action
+            android:id="@+id/action_allCompaniesFragment_to_companyFragment"
+            app:destination="@id/companyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyFragment"
+        android:name="com.android.lifehacktest.ui.CompanyFragment"
+        android:label="fragment_company"
+        tools:layout="@layout/fragment_company" >
+        <action
+            android:id="@+id/action_companyFragment_to_allCompaniesFragment"
+            app:destination="@id/allCompaniesFragment" />
+        <argument
+            android:name="idCompany"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
